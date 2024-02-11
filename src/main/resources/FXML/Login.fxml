@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane fx:controller="com.jmc.mazebank.Controllers.LoginController" prefHeight="400.0" prefWidth="600.0"
+            styleClass="login_container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <VBox prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Text fill="#af1eb7" strokeType="OUTSIDE" strokeWidth="0.0" text="TP Bank" textAlignment="CENTER"
+              wrappingWidth="227.18304443359375">
+            <font>
+                <Font name="Arial Bold" size="43.0"/>
+            </font>
+        </Text>
+        <FontAwesomeIconView glyphName="BANK" size="100" text=""/>
+    </VBox>
+    <VBox layoutX="237.0" layoutY="65.0" prefHeight="350.0" prefWidth="320.0" styleClass="login_form_container"
+          AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <Label text="Choose Your Account Type"/>
+        <ChoiceBox fx:id="acc_selector" prefWidth="120.0" styleClass="account_selector"/>
+        <Label fx:id="payee_address_lbl" text="Payee Address"/>
+        <TextField fx:id="payee_address_fld" styleClass="input_field"/>
+        <Label text="Password"/>
+        <TextField fx:id="password_fld" styleClass="input_field"/>
+        <Button fx:id="login_btn" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" mnemonicParsing="false"
+                styleClass="login_form_container_Button" text="Login" textAlignment="CENTER">
+            <font>
+                <Font size="49.0"/>
+            </font>
+        </Button>
+        <Label fx:id="error_lbl" styleClass="error_lbl" text=""/>
+    </VBox>
+</AnchorPane>

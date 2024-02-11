@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="236.0" styleClass="main_menu_container" stylesheets="@../../Styles/ClientMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.ClientMenuController">
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="230.0" styleClass="left_container" VBox.vgrow="NEVER">
+        <VBox layoutY="6.4" prefHeight="88.0" prefWidth="230.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <FontAwesomeIconView glyphName="BANK" size="50" tabSize="25" text="">
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </FontAwesomeIconView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title_container_text" text="TP Bank">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Text>
+        </VBox>
+        <VBox layoutY="114.0" prefHeight="400.0" prefWidth="230.0" styleClass="menu_container" AnchorPane.topAnchor="100.0">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <Button fx:id="dashboard_btn" graphicTextGap="10.0" maxWidth="148.0" minHeight="40.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="148.0" styleClass="alt_menu_btn" text="Dashboard" textFill="WHITE" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontAwesomeIconView fill="#da863f" glyphName="HOME" selectionFill="#da863f" size="25" tabSize="25" text="" />
+                </graphic>
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="20.0" top="10.0" />
+                </VBox.margin>
+            </Button>
+            <Button fx:id="transactions_btn" graphicTextGap="10.0" maxWidth="148.0" minHeight="40.0" mnemonicParsing="false" prefWidth="150.0" styleClass="alt_menu_btn" text="Transactions" textFill="WHITE" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontAwesomeIconView fill="GREEN" glyphName="MONEY" selectionFill="GREEN" size="25" styleClass="money" tabSize="25" text="" />
+                </graphic>
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="20.0" top="10.0" />
+                </VBox.margin>
+            </Button>
+            <Button fx:id="accounts_btn" graphicTextGap="10.0" maxWidth="148.0" minHeight="40.0" mnemonicParsing="false" prefWidth="148.0" styleClass="alt_menu_btn" text="Accounts" textFill="WHITE">
+                <graphic>
+                    <FontAwesomeIconView fill="#d91a1a" glyphName="ADDRESS_BOOK" size="25" styleClass="account" tabSize="25" text="" />
+                </graphic>
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="20.0" top="10.0" />
+                </VBox.margin>
+            </Button>
+            <Line endX="210.0" startX="20.0">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </Line>
+            <Button fx:id="profile_btn" graphicTextGap="10.0" maxWidth="148.0" minHeight="40.0" mnemonicParsing="false" styleClass="alt_menu_btn" text="User Profile" textFill="WHITE">
+                <graphic>
+                    <FontAwesomeIconView fill="WHITE" glyphName="USER" size="25" tabSize="25" text="" />
+                </graphic>
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="20.0" />
+                </VBox.margin>
+            </Button>
+            <Button fx:id="logout_btn" graphicTextGap="10.0" maxWidth="148.0" minHeight="40.0" mnemonicParsing="false" styleClass="alt_menu_btn" text="Log out" textFill="WHITE">
+                <graphic>
+                    <FontAwesomeIconView fill="#1010e4" glyphName="EXTERNAL_LINK" size="25" tabSize="25" text="" />
+                </graphic>
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="20.0" top="10.0" />
+                </VBox.margin>
+            </Button>
+        </VBox>
+        <VBox layoutX="15.0" layoutY="543.0" prefHeight="120.0" prefWidth="130.0" styleClass="report_container" AnchorPane.bottomAnchor="32.200000000000045" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.599999999999994">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Report Bug?" />
+            <Label text="Use this to report any error" />
+            <Button fx:id="report_btn" graphicTextGap="10.0" maxWidth="100.0" minHeight="35.0" mnemonicParsing="false" text="Report" textFill="WHITE">
+                <graphic>
+                    <FontAwesomeIconView fill="#1cae1c" glyphName="PLUS" text="" />
+                </graphic>
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Button>
+        </VBox>
+    </AnchorPane>
+</VBox>

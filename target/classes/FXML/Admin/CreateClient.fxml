@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="750.0" maxWidth="850.0" prefHeight="750.0" prefWidth="850.0" styleClass="create_client_container"
+            stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jmc.mazebank.Controllers.Admin.CreateClientController">
+    <Text layoutX="20.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Client Account"
+          AnchorPane.leftAnchor="20.0">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Text>
+    <VBox layoutX="20.0" layoutY="35.0" prefHeight="690.0" prefWidth="600.0" AnchorPane.leftAnchor="20.0">
+        <padding>
+            <Insets top="10.0"/>
+        </padding>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Text>
+        <TextField fx:id="fName_fld" maxWidth="200.0">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </TextField>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Text>
+        <TextField fx:id="lName_fld" maxWidth="200.0" prefHeight="26.0" prefWidth="50.0">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </TextField>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Text>
+        <TextField fx:id="password_fld" maxWidth="200.0">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </TextField>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Payee Address:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Text>
+        <CheckBox fx:id="payeeAddress_box" mnemonicParsing="false">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </CheckBox>
+        <Label fx:id="payeeAddress_lbl" styleClass="payee_address_lbl" text="Label">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Label>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Text>
+        <CheckBox fx:id="chequing_account_box" mnemonicParsing="false" text="Add Chequing Account">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </CheckBox>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chequing Account Balance:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Text>
+        <TextField fx:id="chequing_amount_fld" layoutX="10.0" layoutY="184.0" maxWidth="200.0">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </TextField>
+        <CheckBox fx:id="savings_account_box" mnemonicParsing="false" text="Add Savings Account">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </CheckBox>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account Balance:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Text>
+        <TextField fx:id="savings_amount_fld" layoutX="10.0" layoutY="373.0" maxWidth="200.0">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </TextField>
+        <Button fx:id="create_new_client_btn" mnemonicParsing="false" text="Create New Client">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Button>
+        <Label fx:id="error_lbl" styleClass="error_lbl" text="Error:">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+    </VBox>
+</AnchorPane>

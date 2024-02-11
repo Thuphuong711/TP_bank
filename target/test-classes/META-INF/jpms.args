@@ -1,0 +1,4 @@
+--patch-module
+mavenfx=_
+--add-reads
+mavenfx=ALL-UNNAMED

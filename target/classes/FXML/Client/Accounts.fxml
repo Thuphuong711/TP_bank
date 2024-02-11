@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="639.0" prefWidth="740.0" styleClass="accounts_view_container"
+            stylesheets="@../../Styles/Accounts.css" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.AccountsController">
+    <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chequing Account"
+          AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.40000057220459"/>
+    <VBox layoutX="14.0" layoutY="46.0" prefHeight="300.0" prefWidth="450.0" styleClass="a" AnchorPane.leftAnchor="30.0"
+          AnchorPane.topAnchor="46.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number"/>
+        <Label fx:id="chequing_account_number" text="378 8883"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Limit: "/>
+        <Label fx:id="transaction_limit" text="10"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:"/>
+        <Label fx:id="chequing_account_date" text="2023-11-07"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:"/>
+        <Label fx:id="chequing_account_balance" text="\$3,000.00"/>
+    </VBox>
+    <Text layoutX="14.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account"
+          AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="373.4000005722046"/>
+    <VBox layoutX="14.0" layoutY="403.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.bottomAnchor="47.0"
+          AnchorPane.leftAnchor="30.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number"/>
+        <Label fx:id="savings_account_number" text="378 8883"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Withdrawal Limit: "/>
+        <Label fx:id="withdraw_limit" text="\$2,000.00"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:"/>
+        <Label fx:id="savings_account_date" text="2023-10-02"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:"/>
+        <Label fx:id="savings_account_balance" text="\$12,000.00"/>
+    </VBox>
+    <Text layoutX="515.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Funds to Savings Account"
+          AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="20.0"/>
+    <TextField fx:id="amount_to_savings" layoutX="521.0" layoutY="46.0" prefHeight="30.0" prefWidth="214.0"
+               styleClass="accounts_view_container" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="46.0"/>
+    <Button fx:id="trans_to_savings_btn" layoutX="562.0" layoutY="108.0" mnemonicParsing="false" text="Transfer"
+            textFill="WHITE" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="108.0">
+        <graphic>
+            <FontAwesomeIconView fx:id="trans_to_savings" glyphName="ARROW_DOWN" size="20" text=""/>
+        </graphic>
+    </Button>
+    <Text layoutX="507.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Funds to Chequing Account"/>
+    <Button fx:id="trans_to_chequing_btn" layoutX="563.0" layoutY="461.0" mnemonicParsing="false" text="Transfer"
+            textFill="WHITE">
+        <graphic>
+            <FontAwesomeIconView glyphName="ARROW_UP" size="20" text=""/>
+        </graphic>
+    </Button>
+    <TextField fx:id="amount_to_chequing" layoutX="520.0" layoutY="400.0" prefHeight="30.0" prefWidth="230.0"
+               styleClass="accounts_view_container"/>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.clients_container {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.clients_container Text {
+    -fx-font-size: 1.4em;
+    -fx-fill: #888888;
+    -fx-font-family: "Calibri Light";
+}
+
+.clients_container .list-view {
+    -fx-border-width: 0;
+    -fx-background-color: #EEEEEE;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.clients_container list-cell {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 10 0 10 0;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}

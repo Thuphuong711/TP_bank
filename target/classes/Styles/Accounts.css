@@ -1,0 +1,46 @@
+.accounts_view_container {
+    -fx-background-color: #EEEEEE;
+}
+
+.accounts_view_container Text {
+    -fx-font-size: 1.4em;
+    -fx-fill: #888888;
+    -fx-font-family: "Calibri Light";
+}
+
+.accounts_view_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #888888;
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+
+.accounts_view_container VBox Text {
+    -fx-font-size: 1.2em;
+}
+
+.accounts_view_container VBox Label {
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+}
+
+.accounts_view_container TextField {
+    -fx-font-size: 1.2em;
+    -fx-pref-width: 200;
+    -fx-pref-height: 35;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.accounts_view_container Button {
+    -fx-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right, #a775c3, #af7bcb);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-font-size: 1.5em;
+}
+
+.accounts_view_container Button:hover {
+    -fx-background-color: linear-gradient(to right, #7b38a2, #8e40bb);
+    -fx-cursor: hand;
+}

@@ -1,0 +1,84 @@
+<<<<<<< HEAD
+.login_container {
+    -fx-background-color: #EEEEEE;
+
+}
+
+/*  Logo container styles */
+.login_logo_container {
+    -fx-background-color: #683286;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+}
+
+.login_logo_container Text {
+    -fx-font-size: 2.5em;
+    -fx-fill: WHITE;
+}
+
+
+.login_logo_container FontAwesomeIconView {
+    -fx-fill: #da863f;
+    -fx-font-size: 4em;
+}
+
+/*  Account Selector ChoiceBox Styles */
+.account_selector {
+    -fx-background-color: #8845ae;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.account_selector .label {
+    -fx-text-fill: #132A13;
+    -fx-font-size: 1.5em;
+}
+
+.account_selector .arrow {
+    -fx-background-color: #132A13;
+}
+
+/*No usage*/
+#choice-box-popup-menu {
+    -fx-background-color: #da863f;
+}
+
+/*  Login Form Styles */
+.login_form_container {
+    -fx-spacing: 15;
+    -fx-alignment: top_left;
+}
+
+.login_form_container .label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+}
+
+.input_field {
+    -fx-font-size: 1.1em;
+    -fx-background-color: #FFFFFF;
+    -fx-font-height: 35;
+
+}
+
+.login_form_container_Button {
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right, #a775c3, #af7bcb);
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 35;
+    -fx-alignment: center;
+}
+
+.login_form_container_Button:hover {
+    -fx-background-color: linear-gradient(to right, #7b38a2, #8e40bb);
+    -fx-cursor: hand;
+}
+
+.error_lbl {
+    -fx-text-fill: #db2929;
+    -fx-font-size: 0.9em;
+}
